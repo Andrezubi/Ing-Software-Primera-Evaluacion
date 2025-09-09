@@ -1,4 +1,4 @@
-import sumar from "./sumador";
+import { peaje } from "./calculadorPeajes";
 
 const first = document.querySelector("#entrada");
 
@@ -10,5 +10,6 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entrada = new Date(first.value);
   const salida = new Date(second.value);
-  div.innerHTML = "<p>Entrada: " + entrada.toLocaleString() + "</p> Salida: "+salida.toLocaleString()+""
+  div.innerHTML = "<p>Entrada: " + entrada.toLocaleString() + "</p> Salida: "+salida.toLocaleString()+
+  "<p> Peaje: "+ peaje(entrada, salida)+"Bs."
 });
