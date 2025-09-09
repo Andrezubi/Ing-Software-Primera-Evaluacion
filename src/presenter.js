@@ -10,6 +10,5 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   const entrada = new Date(first.value);
   const salida = new Date(second.value);
-
-  div.innerHTML = "<p>Entrada: " + entrada + "</p> Salida: "+salida;
+  div.innerHTML = "<p>Entrada: " + entrada.toLocaleString() + "</p> Salida: "+salida.toLocaleString()+""
 });

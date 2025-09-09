@@ -19,17 +19,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "15b68fadb76e58e387185101edaf0b19221297b6",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-09T06:47:53.000Z",
       "message": "feat: Pide y muestra hora de salida",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/15b68fadb76e58e387185101edaf0b19221297b6"
     },
     "stats": {
       "total": 9,
       "additions": 5,
       "deletions": 4,
+      "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-09T13:45:09.000Z",
+      "message": "feat: devuelve peaje de diferencia de dos horas",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 13,
+      "deletions": 17,
       "date": "2025-09-09"
     },
     "coverage": 100,
