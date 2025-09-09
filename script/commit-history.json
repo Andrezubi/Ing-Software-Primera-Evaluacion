@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1425550ac3595b3a9ebed7e30c3c672e7a3543b4",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-09T13:45:09.000Z",
       "message": "feat: devuelve peaje de diferencia de dos horas",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/1425550ac3595b3a9ebed7e30c3c672e7a3543b4"
     },
     "stats": {
       "total": 30,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-09T13:57:56.000Z",
+      "message": "feat: calcula el peaje en horas regulares para dos horas cualesquiera",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 8,
+      "deletions": 3,
+      "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 2,
     "failed_tests": 0,
     "conclusion": "success"
   }
