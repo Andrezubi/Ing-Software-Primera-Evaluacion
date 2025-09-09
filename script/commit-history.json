@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "e5ad52bf12244be2323c0bb94d72f958b150fa03",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-09T06:44:21.000Z",
       "message": "feat> Pide y muestra la hora de entrada",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/e5ad52bf12244be2323c0bb94d72f958b150fa03"
     },
     "stats": {
       "total": 29,
       "additions": 14,
       "deletions": 15,
+      "date": "2025-09-09"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-09T06:47:53.000Z",
+      "message": "feat: Pide y muestra hora de salida",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 5,
+      "deletions": 4,
       "date": "2025-09-09"
     },
     "coverage": 100,
