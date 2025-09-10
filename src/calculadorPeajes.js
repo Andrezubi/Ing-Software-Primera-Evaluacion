@@ -3,6 +3,12 @@ export function peaje(entrada, salida){
 }
 
 export function estaPerdido(entrada,salida,perdido){
+    
+    if(salida<entrada){
+        return "La fecha de Entrada no puede ser despues de la de Salida";
+    }
+    
+    
     if(perdido){
         return 80;
     }
