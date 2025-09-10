@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dfaa6dab7c629a0c5440dc039cec6f324565d500",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-10T17:23:36.000Z",
       "message": "feat: revisa si perdieron el ticket y muestra el nuevo peaje",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/dfaa6dab7c629a0c5440dc039cec6f324565d500"
     },
     "stats": {
       "total": 18,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-10T17:26:50.000Z",
+      "message": "feat: si no se perdio el ticket se calcula el peaje de forma normal",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

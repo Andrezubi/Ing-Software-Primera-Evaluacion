@@ -6,4 +6,7 @@ export function estaPerdido(entrada,salida,perdido){
     if(perdido){
         return 80;
     }
+    else{
+        return peaje(entrada,salida);
+    }
 }
