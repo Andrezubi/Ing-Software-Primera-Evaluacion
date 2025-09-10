@@ -1,4 +1,4 @@
-import { peaje,estaPerdido } from "./calculadorPeajes";
+import { peaje,validador } from "./calculadorPeajes";
 
 
 describe("CalcularPeajes", () => {
@@ -9,13 +9,13 @@ describe("CalcularPeajes", () => {
     expect(peaje(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"))).toEqual(30);
   });
     it("si se perdio el ticket el peaje deberia ser de 80 bs", () => {
-    expect(estaPerdido(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual(80);
+    expect(validador(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual(80);
   });
   it("si no se perdio el ticket el peaje se calcula normalmente", () => {
-    expect(estaPerdido(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),false)).toEqual(30);
+    expect(validador(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),false)).toEqual(30);
   });
   it("si la fecha de salida es antes que de la entrada devuelve error", () => {
-    expect(estaPerdido(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
+    expect(validador(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
   });
   
 });

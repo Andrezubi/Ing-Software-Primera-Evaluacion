@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "607494785f21cfc2b8fc34e01877b8f3af92e9f1",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-10T20:06:14.000Z",
       "message": "feat: valida si la entrada es despues de la salida",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/607494785f21cfc2b8fc34e01877b8f3af92e9f1"
     },
     "stats": {
       "total": 10,
       "additions": 9,
       "deletions": 1,
+      "date": "2025-09-10"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-10T20:08:23.000Z",
+      "message": "refactor: cambio de nombre de la funcion validadora",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 7,
+      "deletions": 7,
       "date": "2025-09-10"
     },
     "coverage": 100,
