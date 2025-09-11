@@ -85,6 +85,9 @@ export function peajeTotal(entrada,salida){
 
 
 export function desglosador(entrada,salida,perdido){
+    if(perdido){
+        return "";
+    }
     if(entrada>salida){
         return "<p>Error"
     }

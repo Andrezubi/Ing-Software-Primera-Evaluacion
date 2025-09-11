@@ -42,6 +42,9 @@ describe("CalcularPeajes", () => {
     expect(peajeTotal(new Date("2025-03-25T04:00:00"), new Date("2025-03-28T04:00:00"))).toEqual(174);
   });
   it("si se intenta desglosar fechas entrada despues de salida que devuelva error", () => {
-    expect(desglosador(new Date("2025-03-28T04:00:00"), new Date("2025-03-26T04:00:00"))).toEqual("<p>Error");
+    expect(desglosador(new Date("2025-03-28T04:00:00"), new Date("2025-03-26T04:00:00"),false)).toEqual("<p>Error");
+  });
+  it("si se desglosa cuando se perdio el ticket no aparece nada", () => {
+    expect(desglosador(new Date("2025-03-28T04:00:00"), new Date("2025-03-26T04:00:00"),true)).toEqual("");
   });
 });

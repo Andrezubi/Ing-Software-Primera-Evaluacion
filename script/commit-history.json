@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6d7625b7082228629cc0906f7b03d304233030e6",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T08:36:31.000Z",
       "message": "feat: el desglosador muestra error si se intenta poner una entrada despues de una salida",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/6d7625b7082228629cc0906f7b03d304233030e6"
     },
     "stats": {
       "total": 18,
@@ -338,6 +338,25 @@
     },
     "coverage": 100,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T08:38:52.000Z",
+      "message": "feat: cuando se perdio el ticket no se desglosa nada",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
