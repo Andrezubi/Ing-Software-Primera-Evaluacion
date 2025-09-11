@@ -1,4 +1,4 @@
-import { validador } from "./calculadorPeajes";
+import { desglosador, validador } from "./calculadorPeajes";
 import { peaje } from "./calculadorPeajes";
 
 const first = document.querySelector("#entrada");
@@ -14,5 +14,6 @@ form.addEventListener("submit", (event) => {
   const salida = new Date(second.value);
   const esPerdido =perdido.checked;
   div.innerHTML = "<p>Entrada: " + entrada.toLocaleString() + "</p> Salida: "+salida.toLocaleString()+
-  "<p> Peaje: "+ validador(entrada, salida,esPerdido)+"Bs."
+  "<p> Peaje: "+ validador(entrada, salida,esPerdido)+"Bs."+desglosador(entrada,salida,esPerdido)
+  
 });

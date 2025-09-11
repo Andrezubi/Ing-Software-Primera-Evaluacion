@@ -1,4 +1,4 @@
-import { peajeDiario,validador,peajeTotal } from "./calculadorPeajes";
+import { peajeDiario,validador,peajeTotal,desglosador } from "./calculadorPeajes";
 
 
 describe("CalcularPeajes", () => {
@@ -40,5 +40,8 @@ describe("CalcularPeajes", () => {
   });
   it("Que el peaje se pueda obtener a traves de varios dias", () => {
     expect(peajeTotal(new Date("2025-03-25T04:00:00"), new Date("2025-03-28T04:00:00"))).toEqual(174);
+  });
+  it("si se intenta desglosar fechas entrada despues de salida que devuelva error", () => {
+    expect(desglosador(new Date("2025-03-28T04:00:00"), new Date("2025-03-26T04:00:00"))).toEqual("<p>Error");
   });
 });

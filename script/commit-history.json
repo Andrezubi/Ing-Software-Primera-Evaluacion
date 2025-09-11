@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff7779b951edb085bad7be17659b6222441faba0",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T08:26:51.000Z",
       "message": "ahora funciona a traves de muchos dias y los redondea",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/ff7779b951edb085bad7be17659b6222441faba0"
     },
     "stats": {
       "total": 82,
@@ -319,6 +319,25 @@
     },
     "coverage": 100,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T08:36:31.000Z",
+      "message": "feat: el desglosador muestra error si se intenta poner una entrada despues de una salida",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 14,
+      "deletions": 4,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -80,8 +80,14 @@ export function peajeTotal(entrada,salida){
     const inicioUltimoDia = new Date(dateSalida);
     inicioUltimoDia.setHours(0, 0, 0, 0);
     total += peajeDiario(inicioUltimoDia, dateSalida);
-    console.log("3 "+peajeDiario(inicioUltimoDia, dateSalida))
     return Math.ceil(total*100)/100;
+}
+
+
+export function desglosador(entrada,salida,perdido){
+    if(entrada>salida){
+        return "<p>Error"
+    }
 }
 
 
