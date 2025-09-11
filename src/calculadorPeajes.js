@@ -5,15 +5,21 @@ export function peaje(entrada, salida){
     while (actual < salida) {
         const hora = actual.getHours();
         if (hora >= 22 || hora <= 5) {
-            total += 6; // nocturna
+            total += 6; 
         } else {
-            total += 10; // regular
+            total += 10; 
         }
     
     actual.setHours(actual.getHours() + 1);
-  }
+    }
+    
+    if (actual.getHours() >= 22 || actual.getHours() <= 5) {
+            total += ((salida-actual)/3600000)*6; 
+        } else {
+            total += ((salida-actual)/3600000)*10; 
+        }
 
-  return total;
+    return total;
     
 
     

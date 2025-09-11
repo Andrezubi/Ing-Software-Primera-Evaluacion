@@ -29,4 +29,7 @@ describe("CalcularPeajes", () => {
     it("para cuando esta en horas normales y nocturnas este usa el peaje de ambas", () => {
     expect(peaje(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T07:00:00"))).toEqual(22);
   });
+  it("que tambien sea compatible con minutos y segundos", () => {
+    expect(peaje(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T07:06:00"))).toEqual(23);
+  });
 });
