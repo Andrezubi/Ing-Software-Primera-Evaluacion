@@ -91,6 +91,43 @@ export function desglosador(entrada,salida,perdido){
     if(entrada>salida){
         return "<p>Error"
     }
+    const dateEntrada = new Date(entrada);
+    const dateSalida = new Date(salida);
+    var total="";
+    if(dateEntrada.getFullYear() === dateSalida.getFullYear() &&
+         dateEntrada.getMonth() === dateSalida.getMonth() &&
+         dateEntrada.getDate() === dateSalida.getDate()){
+        return "<p>"+dateEntrada.toLocaleString().split(',')[0]+": "+peajeDiario(dateEntrada,dateSalida)+"bs.";
+    }
+    const finPrimerDia = new Date(dateEntrada);
+    finPrimerDia.setHours(23, 59, 59, 999);
+    total = "<p>"+dateEntrada.toLocaleString().split(',')[0]+": "+peajeDiario(dateEntrada, finPrimerDia)+"bs.";
+
+    // Días intermedios
+    let diaActual = new Date(finPrimerDia);
+    diaActual.setDate(diaActual.getDate() + 1);
+    diaActual.setHours(0, 0, 0, 0);
+
+
+    const inicioSalida = new Date(dateSalida);
+    inicioSalida.setHours(0, 0, 0, 0)
+    while (diaActual < inicioSalida) {
+        const finDia = new Date(diaActual);
+        finDia.setHours(23, 59, 59, 999);
+
+        // Peaje del día completo
+        total = total+"<p>"+diaActual.toLocaleString().split(',')[0]+": " +peajeDiario(diaActual, finDia)+"bs.";
+
+        // Avanzar un día y resetear hora a medianoche
+        diaActual.setDate(diaActual.getDate() + 1);
+        diaActual.setHours(0, 0, 0, 0);
+    }
+
+    // Último día parcial
+    const inicioUltimoDia = new Date(dateSalida);
+    inicioUltimoDia.setHours(0, 0, 0, 0);
+    total =total + "<p>"+dateSalida.toLocaleString().split(',')[0]+": " +peajeDiario(inicioUltimoDia, dateSalida)+"bs.";
+    return total;
 }
 
 

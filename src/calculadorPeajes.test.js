@@ -47,4 +47,7 @@ describe("CalcularPeajes", () => {
   it("si se desglosa cuando se perdio el ticket no aparece nada", () => {
     expect(desglosador(new Date("2025-03-28T04:00:00"), new Date("2025-03-26T04:00:00"),true)).toEqual("");
   });
+  it("desglosa los precios por fecha", () => {
+    expect(desglosador(new Date("2025-03-25T04:00:00"), new Date("2025-03-26T04:00:00"),false)).toEqual("<p>25/3/2025: 50bs.<p>26/3/2025: 24bs.");
+  });
 });

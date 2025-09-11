@@ -342,12 +342,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "87f00f1d68e0ffdc54d816122e0ed7ac268cce63",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T08:38:52.000Z",
       "message": "feat: cuando se perdio el ticket no se desglosa nada",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/87f00f1d68e0ffdc54d816122e0ed7ac268cce63"
     },
     "stats": {
       "total": 8,
@@ -357,6 +357,25 @@
     },
     "coverage": 100,
     "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T08:52:11.000Z",
+      "message": "feat: desglosa los precios por fechas correspondientes",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 40,
+      "additions": 40,
+      "deletions": 0,
+      "date": "2025-09-11"
+    },
+    "coverage": 91.43,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }
