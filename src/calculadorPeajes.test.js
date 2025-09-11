@@ -32,4 +32,7 @@ describe("CalcularPeajes", () => {
   it("que tambien sea compatible con minutos y segundos", () => {
     expect(peaje(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T07:06:00"))).toEqual(23);
   });
+  it("que redondee al segundo decimal mayor", () => {
+    expect(peaje(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T07:00:06"))).toEqual(22.02);
+  });
 });

@@ -247,12 +247,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a0ee472093c34f5d8500cbc97c10983dc67fffd7",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T06:45:21.000Z",
       "message": "feat:  peaje funciona con minutos y segundos",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/a0ee472093c34f5d8500cbc97c10983dc67fffd7"
     },
     "stats": {
       "total": 17,
@@ -262,6 +262,25 @@
     },
     "coverage": 100,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T06:48:55.000Z",
+      "message": "redondea al segundo decimal hacia arriba",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

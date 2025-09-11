@@ -19,7 +19,7 @@ export function peaje(entrada, salida){
             total += ((salida-actual)/3600000)*10; 
         }
 
-    return total;
+    return Math.ceil(total*100)/100;
     
 
     
