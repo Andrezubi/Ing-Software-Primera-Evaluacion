@@ -3,21 +3,24 @@ import { peaje,validador } from "./calculadorPeajes";
 
 describe("CalcularPeajes", () => {
   it("deberia conseguir peaje entre dos horas", () => {
-    expect(peaje(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T15:00:00Z"))).toEqual(20);
+    expect(peaje(new Date("2025-03-25T13:00:00"), new Date("2025-03-25T15:00:00"))).toEqual(20);
   });
   it("deberia conseguir peaje regular  dos horas", () => {
-    expect(peaje(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"))).toEqual(30);
+    expect(peaje(new Date("2025-03-25T13:00:00"), new Date("2025-03-25T16:00:00"))).toEqual(30);
   });
     it("si se perdio el ticket el peaje deberia ser de 80 bs", () => {
-    expect(validador(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual(80);
+    expect(validador(new Date("2025-03-25T13:00:00"), new Date("2025-03-25T16:00:00"),true)).toEqual(80);
   });
   it("si no se perdio el ticket el peaje se calcula normalmente", () => {
-    expect(validador(new Date("2025-03-25T13:00:00Z"), new Date("2025-03-25T16:00:00Z"),false)).toEqual(30);
+    expect(validador(new Date("2025-03-25T13:00:00"), new Date("2025-03-25T16:00:00"),false)).toEqual(30);
   });
   it("si la fecha de salida es antes que de la entrada devuelve error", () => {
-    expect(validador(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
+    expect(validador(new Date("2025-03-25T18:00:00"), new Date("2025-03-25T16:00:00"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
   });
   it("Para cualquier fecha de salida que sea antes que  la entrada devuelve error", () => {
-    expect(validador(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
+    expect(validador(new Date("2025-03-25T23:00:00"), new Date("2025-03-25T16:00:00"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
+  });
+  it("para horas nocturnas deberia usar la tarifa nocturna", () => {
+    expect(peaje(new Date("2025-03-25T22:00:00"), new Date("2025-03-25T23:00:00"))).toEqual(6);
   });
 });

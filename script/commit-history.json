@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "18f4e9f45dff4c567279b49875d9f2d28f4341c1",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T04:56:37.000Z",
       "message": "test: incremento de tests para la validacion de errores",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/18f4e9f45dff4c567279b49875d9f2d28f4341c1"
     },
     "stats": {
       "total": 4,
@@ -186,6 +186,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T05:32:23.000Z",
+      "message": "feat: toma en cuenta horas nocturnas si comienzan desde las 10 de la noche",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 16,
+      "deletions": 6,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -1,4 +1,11 @@
 export function peaje(entrada, salida){
+    var entradaDate =new Date(entrada);
+    var salidaDate = new Date(salida);
+    if(entradaDate.getHours()>=22){
+        return ((salida-entrada)/(1000*60*60)*6)
+    }
+    
+
     return (salida-entrada)/(1000*60*60)*10 ;
 }
 
