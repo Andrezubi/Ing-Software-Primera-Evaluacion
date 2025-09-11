@@ -1,4 +1,4 @@
-export function peaje(entrada, salida){
+export function peajeDiario(entrada, salida){
     var total = 0;
     var actual = new Date(entrada);
 
@@ -14,13 +14,16 @@ export function peaje(entrada, salida){
     }
     
     if (actual.getHours() >= 22 || actual.getHours() <= 5) {
-            total += ((salida-actual)/3600000)*6; 
-        } else {
-            total += ((salida-actual)/3600000)*10; 
-        }
-
-    return Math.ceil(total*100)/100;
-    
+        total += ((salida-actual)/3600000)*6; 
+    } else {
+        total += ((salida-actual)/3600000)*10; 
+    }
+    if(total>50){
+        return 50;
+    }
+    else{
+        return Math.ceil(total*100)/100;
+    }
 
     
 }
@@ -36,6 +39,6 @@ export function validador(entrada,salida,perdido){
         return 80;
     }
     else{
-        return peaje(entrada,salida);
+        return peajeDiario(entrada,salida);
     }
 }
