@@ -152,12 +152,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e89e1eea7506be02292a38baf71dbc1275c71e6d",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-10T20:08:23.000Z",
       "message": "refactor: cambio de nombre de la funcion validadora",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/e89e1eea7506be02292a38baf71dbc1275c71e6d"
     },
     "stats": {
       "total": 14,
@@ -167,6 +167,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T04:56:37.000Z",
+      "message": "test: incremento de tests para la validacion de errores",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

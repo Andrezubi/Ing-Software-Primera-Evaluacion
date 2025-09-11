@@ -17,5 +17,7 @@ describe("CalcularPeajes", () => {
   it("si la fecha de salida es antes que de la entrada devuelve error", () => {
     expect(validador(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
   });
-  
+  it("Para cualquier fecha de salida que sea antes que  la entrada devuelve error", () => {
+    expect(validador(new Date("2025-03-25T18:00:00Z"), new Date("2025-03-25T16:00:00Z"),true)).toEqual("La fecha de Entrada no puede ser despues de la de Salida");
+  });
 });
