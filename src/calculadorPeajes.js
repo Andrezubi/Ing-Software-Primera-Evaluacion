@@ -4,19 +4,17 @@ export function peajeDiario(entrada, salida){
 
     while (actual < salida) {
         const hora = actual.getHours();
-        if (hora >= 22 || hora <= 5) {
-            total += 6; 
-        } else {
-            total += 10; 
-        }
-    
-    actual.setHours(actual.getHours() + 1);
-    }
-    
-    if (actual.getHours() >= 22 || actual.getHours() <= 5) {
-        total += ((salida-actual)/3600000)*6; 
-    } else {
-        total += ((salida-actual)/3600000)*10; 
+        let nextHour = new Date(actual);
+        nextHour.setHours(actual.getHours() + 1, 0, 0, 0);
+
+        // calcular fracción si la hora se pasa de salida
+        const end = nextHour > salida ? salida : nextHour;
+        const diffHours = (end - actual) / (1000 * 60 * 60);
+
+        if (hora >= 22 || hora < 6) total += diffHours * 6;
+        else total += diffHours * 10;
+
+        actual = nextHour;
     }
     if(total>50){
         return 50;
@@ -39,6 +37,51 @@ export function validador(entrada,salida,perdido){
         return 80;
     }
     else{
-        return peajeDiario(entrada,salida);
+        return peajeTotal(entrada,salida);
     }
 }
+
+
+
+export function peajeTotal(entrada,salida){
+    const dateEntrada = new Date(entrada);
+    const dateSalida = new Date(salida);
+    var total=0;
+    if(dateEntrada.getFullYear() === dateSalida.getFullYear() &&
+         dateEntrada.getMonth() === dateSalida.getMonth() &&
+         dateEntrada.getDate() === dateSalida.getDate()){
+        return peajeDiario(dateEntrada,dateSalida);
+    }
+    const finPrimerDia = new Date(dateEntrada);
+    finPrimerDia.setHours(23, 59, 59, 999);
+    total += peajeDiario(dateEntrada, finPrimerDia);
+
+    // Días intermedios
+    let diaActual = new Date(finPrimerDia);
+    diaActual.setDate(diaActual.getDate() + 1);
+    diaActual.setHours(0, 0, 0, 0);
+
+
+    const inicioSalida = new Date(dateSalida);
+    inicioSalida.setHours(0, 0, 0, 0)
+    while (diaActual < inicioSalida) {
+        const finDia = new Date(diaActual);
+        finDia.setHours(23, 59, 59, 999);
+
+        // Peaje del día completo
+        total += peajeDiario(diaActual, finDia);
+
+        // Avanzar un día y resetear hora a medianoche
+        diaActual.setDate(diaActual.getDate() + 1);
+        diaActual.setHours(0, 0, 0, 0);
+    }
+
+    // Último día parcial
+    const inicioUltimoDia = new Date(dateSalida);
+    inicioUltimoDia.setHours(0, 0, 0, 0);
+    total += peajeDiario(inicioUltimoDia, dateSalida);
+    console.log("3 "+peajeDiario(inicioUltimoDia, dateSalida))
+    return Math.ceil(total*100)/100;
+}
+
+

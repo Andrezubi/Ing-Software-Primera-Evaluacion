@@ -14,5 +14,5 @@ form.addEventListener("submit", (event) => {
   const salida = new Date(second.value);
   const esPerdido =perdido.checked;
   div.innerHTML = "<p>Entrada: " + entrada.toLocaleString() + "</p> Salida: "+salida.toLocaleString()+
-  "<p> Peaje: "+ validadoro(entrada, salida,esPerdido)+"Bs."
+  "<p> Peaje: "+ validador(entrada, salida,esPerdido)+"Bs."
 });

@@ -1,4 +1,4 @@
-import { peajeDiario,validador } from "./calculadorPeajes";
+import { peajeDiario,validador,peajeTotal } from "./calculadorPeajes";
 
 
 describe("CalcularPeajes", () => {
@@ -37,5 +37,8 @@ describe("CalcularPeajes", () => {
   });
   it("Que la tarifa diaria maxima sea de 50 bs", () => {
     expect(peajeDiario(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T22:00:06"))).toEqual(50);
+  });
+  it("Que el peaje se pueda obtener a traves de varios dias", () => {
+    expect(peajeTotal(new Date("2025-03-25T04:00:00"), new Date("2025-03-28T04:00:00"))).toEqual(174);
   });
 });

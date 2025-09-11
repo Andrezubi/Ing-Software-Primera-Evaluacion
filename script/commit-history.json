@@ -285,12 +285,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7ea6534becff6d421bb6b19479b5b2b24213282c",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T07:00:48.000Z",
       "message": "Ahora el peaje diario se maxea a los 50 bs",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/7ea6534becff6d421bb6b19479b5b2b24213282c"
     },
     "stats": {
       "total": 40,
@@ -300,6 +300,25 @@
     },
     "coverage": 100,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T08:26:51.000Z",
+      "message": "ahora funciona a traves de muchos dias y los redondea",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 64,
+      "deletions": 18,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }
