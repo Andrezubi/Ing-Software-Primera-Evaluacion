@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "abd3c867b61fddf5d018f8f19ed0e3831d2fb8bc",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T05:45:22.000Z",
       "message": "feat: tambien usa tarifas nocturnas cuando es la madrugada",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/abd3c867b61fddf5d018f8f19ed0e3831d2fb8bc"
     },
     "stats": {
       "total": 5,
@@ -224,6 +224,25 @@
     },
     "coverage": 100,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T06:30:09.000Z",
+      "message": "feat: Calcula el tiempo de horas ambas nocturnas y normales juntas",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 19,
+      "deletions": 6,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }

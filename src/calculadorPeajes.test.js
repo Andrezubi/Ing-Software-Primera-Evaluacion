@@ -26,4 +26,7 @@ describe("CalcularPeajes", () => {
   it("para horas nocturnas desde la madrugada deberia usar la tarifa nocturna", () => {
     expect(peaje(new Date("2025-03-25T01:00:00"), new Date("2025-03-25T04:00:00"))).toEqual(18);
   });
+    it("para cuando esta en horas normales y nocturnas este usa el peaje de ambas", () => {
+    expect(peaje(new Date("2025-03-25T04:00:00"), new Date("2025-03-25T07:00:00"))).toEqual(22);
+  });
 });

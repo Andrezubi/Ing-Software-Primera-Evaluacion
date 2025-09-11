@@ -1,12 +1,22 @@
 export function peaje(entrada, salida){
-    var entradaDate =new Date(entrada);
-    var salidaDate = new Date(salida);
-    if(entradaDate.getHours()>=22 || entradaDate.getHours()<=5){
-        return ((salida-entrada)/(1000*60*60)*6)
-    }
+    var total = 0;
+    var actual = new Date(entrada);
+
+    while (actual < salida) {
+        const hora = actual.getHours();
+        if (hora >= 22 || hora <= 5) {
+            total += 6; // nocturna
+        } else {
+            total += 10; // regular
+        }
+    
+    actual.setHours(actual.getHours() + 1);
+  }
+
+  return total;
     
 
-    return (salida-entrada)/(1000*60*60)*10 ;
+    
 }
 
 export function validador(entrada,salida,perdido){
