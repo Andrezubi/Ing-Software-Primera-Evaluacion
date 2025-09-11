@@ -190,12 +190,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3c2d71a9908ec89c896e23dce1ec888bdfe31d1d",
     "author": "Andres Zubieta",
     "commit": {
       "date": "2025-09-11T05:32:23.000Z",
       "message": "feat: toma en cuenta horas nocturnas si comienzan desde las 10 de la noche",
-      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/3c2d71a9908ec89c896e23dce1ec888bdfe31d1d"
     },
     "stats": {
       "total": 22,
@@ -205,6 +205,25 @@
     },
     "coverage": 100,
     "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Andres Zubieta",
+    "commit": {
+      "date": "2025-09-11T05:45:22.000Z",
+      "message": "feat: tambien usa tarifas nocturnas cuando es la madrugada",
+      "url": "https://github.com/Andrezubi/Ing-Software-Primera-Evaluacion/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2025-09-11"
+    },
+    "coverage": 100,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

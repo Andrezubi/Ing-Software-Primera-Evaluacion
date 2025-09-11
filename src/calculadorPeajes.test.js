@@ -23,4 +23,7 @@ describe("CalcularPeajes", () => {
   it("para horas nocturnas deberia usar la tarifa nocturna", () => {
     expect(peaje(new Date("2025-03-25T22:00:00"), new Date("2025-03-25T23:00:00"))).toEqual(6);
   });
+  it("para horas nocturnas desde la madrugada deberia usar la tarifa nocturna", () => {
+    expect(peaje(new Date("2025-03-25T01:00:00"), new Date("2025-03-25T04:00:00"))).toEqual(18);
+  });
 });
